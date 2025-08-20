@@ -1,7 +1,43 @@
 
-Open [http://localhost:3000/events](http://localhost:3000/events) in your browser to access the Event Manager page.
+#  Mini Event Manager
 
-You can start editing the event page by modifying `app/events/page.tsx`. The app auto-refreshes to reflect your changes.
+A simple and modern Event Manager built for **PyCray Tech’s Full Stack Developer (Next.js) assignment**. Easily add, list, delete, and search events — all with a clean Next.js + Tailwind UI.
+
+---
+
+##  How to Run
+
+1. Install dependencies:  
+pnpm install
+
+2. Start development server:  
+pnpm dev
+
+3. Open in browser:  
+http://localhost:3000/events
+
+---
+
+## Path of the Page
+
+- Source file:  
+app/events/page.tsx
+
+- URL route:  
+/events
+
+---
+
+## Notes / Assumptions
+
+- Fully client-side; no backend or API routes are used.  
+- Events persist in **localStorage** across reloads.  
+- State is managed with React hooks (`useState`, `useEffect`).  
+- Dark/light mode toggle is session-only (does not persist).  
+- Styled with TailwindCSS for a clean, responsive design.  
+- Icons provided by **react-icons** (ensure you install with `pnpm add react-icons`).  
+
+---
 
 ## Tech Stack
 
@@ -11,35 +47,17 @@ You can start editing the event page by modifying `app/events/page.tsx`. The app
 - pnpm  
 - react-icons  
 
+---
+
 ## Features
 
-- Add events with event name and date  
-- List and delete events dynamically  
-- Client-side state management with React hooks  
-- Persist events in `localStorage` for data retention across page reloads  
-- Search and filter events by name in real-time  
-- Dark/light mode toggle for user preference  
-- Separate upcoming and past event sections with sorting  
-- Statistics cards showing total, upcoming, and past events  
-
-## Project Structure
-
-- `/app/events/page.tsx` — main events page route  
-- `/app/layout.tsx` — global layout and styles  
-- `/public` — static assets  
-
-## Learn More
-
-- [Next.js Documentation](https://nextjs.org/docs) — official guide and API reference  
-- [TailwindCSS Documentation](https://tailwindcss.com/docs) — utility-first CSS framework  
-- [react-icons](https://react-icons.github.io/react-icons) — icon library for React apps  
-
-## Deployment
-
-The easiest way to deploy this Next.js app is via [Vercel](https://vercel.com/new).
-
-Refer to [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for detailed instructions.
+- **Add Events** — create events with name and date  
+- **List Events** — view all upcoming and past events  
+- **Delete Events** — remove events you don’t need  
+- **Search / Filter** — find events by name in real time  
+- **Persistence** — data stored in localStorage  
+- **Dark & Light Mode Toggle**  
 
 ---
 
-Thank you for reviewing my assignment. I look forward to the opportunity to discuss this project further.
+Thank you for reviewing my assignment. I look forward to the opportunity to discuss this project further. nity to discuss this project further.
